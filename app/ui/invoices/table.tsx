@@ -31,7 +31,7 @@ export default async function InvoicesTable({
                         className="mr-2 rounded-full"
                         width={28}
                         height={28}
-                        alt={`${invoice.name}'s profile picture`}
+                        // alt={`${invoice.name}'s profile picture`}
                       />
                       <p>{invoice.name}</p>
                     </div>
@@ -47,6 +47,7 @@ export default async function InvoicesTable({
                     <p>{formatDateToLocal(invoice.date)}</p>
                   </div>
                   <div className="flex justify-end gap-2">
+                    {/*ここで編集ボタン*/}
                     <UpdateInvoice id={invoice.id} />
                     <DeleteInvoice id={invoice.id} />
                   </div>
@@ -90,7 +91,7 @@ export default async function InvoicesTable({
                         className="rounded-full"
                         width={28}
                         height={28}
-                        alt={`${invoice.name}'s profile picture`}
+                        // alt={`${invoice.name}'s profile picture`}
                       />
                       <p>{invoice.name}</p>
                     </div>
